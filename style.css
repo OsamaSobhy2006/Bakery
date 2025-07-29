@@ -2,8 +2,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
 }
+
 html, body {
     height: 100%;
     font-family: 'Playfair Display', serif;
@@ -21,12 +21,13 @@ html, body {
     padding: 5px 150px;
     background-color: white;
 }
-#button2{
-    border: 2px solid white;
-}
 
 .img img {
     width: 200px;
+}
+
+.right-section {
+    display: flex;
 }
 
 .right-section a {
@@ -35,10 +36,9 @@ html, body {
     font-size: 18px;
     color: gray;
 }
-.right-section a:first-child{
-    color:black;
+.right-section a:first-child {
+    color: black;
 }
-
 a:hover {
     color: rgb(191, 118, 29);
 }
@@ -96,6 +96,41 @@ a:hover {
     background-color: white;
     color: black;
     transition: 0.3s ease;
+}.content button {
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.button1 {
+    background-color: rgb(181, 136, 77);
+    cursor: pointer;
+}
+
+.button1:hover {
+    background-color: white;
+    color: black;
+    transition: 0.3s ease;
+}
+
+.button2 {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.button2:hover {
+    background-color: white;
+    color: black;
+    transition: 0.3s ease;
+}
+#button2{
+    border: 2px solid white;
 }
 
 .box {
@@ -138,28 +173,26 @@ a:hover {
 
 .who .right {
     max-width: 500px;
-    font-family: 'Playfair Display', serif;
     color: #333;
 }
 
 .who .right h1 {
     font-size: 30px;
-    margin-bottom: 20px;
     padding-top: 50px;
     padding-left: 20px;
     color: rgb(59, 48, 34);
 }
-.who .right p{
+.who .right p {
     padding-left: 20px;
     font-size: 18px;
     color: rgb(98, 97, 97);
 }
 
-.icon-text{
+.icon-text {
     display: flex;
     align-items: center;
 }
-.icon-circle{
+.icon-circle {
     width: 50px;
     height: 50px;
     border: 1px solid rgb(130, 99, 58);
@@ -169,29 +202,29 @@ a:hover {
     justify-content: center;
     margin-left: 10px;
 }
-.icon-circle i{
+.icon-circle i {
     font-size: 20px;
     color: rgb(130, 99, 58);
 }
 
-.location{
+.location {
     display: flex;
     width: 100%;
-    height: 100%;
-    background-color:#eae8e8;
+    background-color: #eae8e8;
     padding-top: 130px;
     padding-right: 150px;
 }
-.location img{
+.location img {
     width: 550px;
     height: 500px;
     padding-left: 30px;
+    margin-bottom: 100px;
 }
-.location .left{
+.location .left {
     padding-top: 130px;
-    padding-left:100px;
+    padding-left: 100px;
 }
-.location .left p{
+.location .left p {
     color: rgb(98, 97, 97);
     font-size: 17px;
 }
@@ -199,18 +232,17 @@ a:hover {
 .baking {
     text-align: center;
     padding: 50px 150px;
-    font-family: 'Playfair Display', serif;
 }
 
 .baking-container {
     display: flex;
     justify-content: space-between;
-    gap: 30px; 
+    gap: 30px;
     margin-top: 40px;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
-.baking p{
+.baking p {
     color: rgb(98, 97, 97);
 }
 .baking-img {
@@ -219,214 +251,335 @@ a:hover {
     max-width: 33.33%;
     text-align: center;
 }
-
 .baking-img img {
     width: 100%;
     height: auto;
 }
-
 .baking-img h3 {
     margin-top: 20px;
     font-size: 22px;
 }
-
 .baking-img p {
     font-size: 16px;
     padding: 0 10px;
     color: rgb(98, 97, 97);
 }
-.contact-container{
+
+.contact{
+    background-color: #eae8e8;
+
+}
+.contact-container {
     display: flex;
-    gap: 100px;
-    padding-right: 100px;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 60px 100px;
     flex-wrap: wrap;
 }
-.contact{
-    width: 100%;
-    height: 100%;
-    background-color:#eae8e8;
-    padding-top: 100px;
-    padding-left: 150px;
+
+.contact .left-section {
+    flex: 1;
+    min-width: 300px;
 }
 
 .map-embed {
     flex: 1;
-    max-width: 600px;
     min-width: 300px;
-    margin-top: 10px;
-    height: 400px;
+    max-width: 600px;
 }
 
 .map-frame {
-    width: 500px;
-    height: 500px;
-    pointer-events: none; 
+    width: 100%;
+    height: 400px;
+    border: none;
 }
 
 .map-embed:hover .map-frame {
-    pointer-events: auto; 
-    cursor: grab; 
+    pointer-events: auto;
+    cursor: grab;
 }
-
-.contact p{
+.contact p {
     color: rgb(98, 97, 97);
 }
-.icon-text2{
+.icon-text2 {
     display: flex;
     align-items: center;
     padding-top: 30px;
 }
-.icon-circle2{
+.icon-circle2 {
     width: 40px;
     height: 40px;
-    border: 1px solid rgb(130, 99, 58);
     border-radius: 50%;
+    background-color: rgb(130, 99, 58);
     display: flex;
     align-items: center;
     justify-content: center;
     margin-left: 10px;
-    background-color:rgb(130, 99, 58);
 }
-.icon-circle2 i{
+.icon-circle2 i {
     font-size: 20px;
     color: white;
 }
-.icon-text2 p{
+.icon-text2 p {
     padding-left: 20px;
 }
 
-.top{
-    width: 100%;
-    height: 55vh;
-}
-.bottom{
-    width: 100%;
-    height: 45vh;
-    background-color: #333;
-}
 .top {
+    width: 100%;
+    height: auto;
     background-color: rgb(62, 56, 56);
     display: flex;
+    flex-wrap: wrap;
     padding: 50px 100px;
     font-size: 15px;
 }
-
 .top .column {
     margin-right: 50px;
 }
-
 .top h3 {
     color: white;
     padding-bottom: 20px;
 }
-
 .top p {
     color: rgb(157, 153, 153);
     line-height: 1.6;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
-.underline-list li{
+.underline-list li {
     list-style: none;
     color: rgb(157, 153, 153);
-    line-height: 1.6;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border-bottom: 1px solid rgb(80, 79, 79);
     padding-bottom: 15px;
     padding-top: 5px;
 }
-.underline-list li:last-child{
-    border-bottom: none;
-}
-
-.column3{
+.column3 {
     padding-left: 70px;
 }
-
-.column3 .underline-list{
-    width: 250px;
-}
-
-.column4{
+.column4 {
     padding-left: 50px;
 }
-
-.icon-text3{
+.icon-text3 {
     display: flex;
     border-bottom: 1px solid rgb(80, 79, 79);
 }
-
-.icon-text3 .icon{
+.icon-text3 .icon {
     color: rgb(157, 153, 153);
     padding-top: 8px;
 }
-.icon-text3 p{
+.icon-text3 p {
     padding-top: 9px;
     padding-left: 20px;
     padding-bottom: 10px;
 }
-.icon-text3 a{
+.icon-text3 a {
     color: rgb(157, 153, 153);
     padding-left: 20px;
     padding-top: 10px;
     padding-bottom: 25px;
     cursor: pointer;
 }
-
-.icon-text3 a:hover{
+.icon-text3 a:hover {
     color: white;
-    transition: .5s ease;
+    transition: 0.5s ease;
 }
-
-.icon-text3:last-of-type{
+.icon-text3:last-of-type {
     border-bottom: none;
 }
 
-.bottom img{
-    padding-left: 38%;
-    padding-top: 50px;
-}
-.bottom p{
+.bottom {
+    width: 100%;
+    height: auto;
+    background-color: #333;
     text-align: center;
-    padding-top: 30px;
-    color:rgb(157, 153, 153);
+    padding: 40px 0;
 }
-
+.bottom img {
+    max-width: 200px;
+}
+.bottom p {
+    color: rgb(157, 153, 153);
+    margin-top: 20px;
+}
 .icon-row {
     display: flex;
-    justify-content: center; 
-    gap: 15px;               
+    justify-content: center;
+    gap: 15px;
     margin-top: 30px;
 }
-
 .icons-contact {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     background-color: rgb(75, 73, 73);
     display: flex;
-    justify-content:center ;
+    justify-content: center;
     align-items: center;
     color: rgb(170, 166, 166);
     font-size: 18px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-
-#one:hover{
+#one:hover {
     color: white;
     background-color: rgb(59, 89, 152);
 }
-
-#two:hover{
+#two:hover {
     color: white;
     background-color: rgb(219, 68, 55);
 }
-#three:hover{
+#three:hover {
     color: white;
     background-color: rgb(0, 119, 181);
 }
-#four:hover{
+#four:hover {
     color: white;
     background-color: rgb(29, 155, 240);
+}
+
+.menu-toggle {
+    display: none;
+}
+.menu-icon {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+    color: #444;
+}
+@media (min-width: 375px) and (max-width: 1024px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px 20px;
+        align-items: flex-start;
+        position: relative;
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1001;
+    }
+
+    .right-section {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: white;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        padding: 15px 0;
+        z-index: 1000;
+    }
+
+    .menu-toggle:checked + .menu-icon + .right-section {
+        display: flex;
+    }
+
+    .right-section a {
+        margin: 10px 20px;
+        font-size: 16px;
+    }
+
+    .hero {
+        padding: 40px 20px;
+        height: auto;
+    }
+
+    .content h1 {
+        font-size: 40px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+
+    .who {
+        flex-direction: column-reverse;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .who .left img {
+        width: 100%;
+        height: auto;
+    }
+
+    .location {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .location img {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    .location .left {
+        padding: 0;
+    }
+
+    .baking {
+        padding: 30px 20px;
+    }
+
+    .baking-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .baking-img {
+        max-width: 100%;
+    }
+
+    .contact {
+        padding: 40px 20px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0;
+    }
+
+    .map-frame {
+        width: 100%;
+        height: 300px;
+    }
+
+    .top {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .column3,
+    .column4 {
+        padding-left: 0;
+        padding-top: 30px;
+    }
+
+    .bottom img {
+        padding: 30px 0;
+        width: 100%;
+    }
+
+    .box,
+    .icons {
+        display: none;
+    }
+
+    .icon-row {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .icon-circle,
+    .icon-circle2 {
+        margin: auto;
+    }
 }
