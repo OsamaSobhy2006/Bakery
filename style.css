@@ -72,39 +72,6 @@ a:hover {
     border-radius: 5px;
     font-size: 15px;
 }
-
-.button1 {
-    background-color: rgb(181, 136, 77);
-    cursor: pointer;
-}
-
-.button1:hover {
-    background-color: white;
-    color: black;
-    transition: 0.3s ease;
-}
-
-.button2 {
-    background-color: transparent;
-    border: 1px solid white;
-    color: white;
-    cursor: pointer;
-    margin: 10px;
-}
-
-.button2:hover {
-    background-color: white;
-    color: black;
-    transition: 0.3s ease;
-}.content button {
-    padding: 20px;
-    color: white;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    font-size: 15px;
-}
-
 .button1 {
     background-color: rgb(181, 136, 77);
     cursor: pointer;
